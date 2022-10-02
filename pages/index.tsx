@@ -1,3 +1,4 @@
+import { Title } from "@mantine/core";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -9,7 +10,9 @@ const Home: NextPage = () => {
         <meta name="description" content="No bs github issue finder." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Git it
+      <Title className="glow" color={"white"}>
+        Git it
+      </Title>
     </div>
   );
 };
