@@ -14,20 +14,20 @@ function MyApp({ Component, pageProps }: AppProps) {
         globalStyles: (theme) => ({
           body: {
             height: "100vh",
-            background: "rgba(255, 255, 255, 0)",
-            borderRadius: 16,
-            boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-            backdropFilter: "blur(200px)",
-            "-webkit-backdrop-filter": "blur(7.8px)",
-            border: "1px solid rgba(255, 255, 255, 0.36)",
-          },
-          html: {
             background:
               "linear-gradient(142deg, rgba(9,9,9,1) 0%, rgba(19,10,31,1) 28%, rgba(0,0,0,1) 100%)",
           },
+          ".glass": {
+            background: "rgba(255, 255, 255, 0.02)",
+            borderRadius: 16,
+            boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+            backdropFilter: "blur(20px)",
+            "-webkit-backdrop-filter": "blur(7.8px)",
+            border: "1px solid rgba(255, 255, 255, 0.36)",
+          },
           ".glow": {
             textShadow:
-              "0 0 7px #fff,0 0 10px #fff,0 0 21px #fff,0 0 42px #fff,0 0 82px #fff,0 0 92px #fff,0 0 102px #fff,0 0 151px #fff",
+              "0 0 0 #fff,0 0 2px #fff,0 0 2px #fff,0 0 2px #fff,0 0 2px #fff,0 0 2px #fff,0 2px 4px #fff,0 2px 20px #fff",
           },
         }),
         colorScheme: "dark",
