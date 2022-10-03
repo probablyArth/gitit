@@ -1,6 +1,6 @@
-# Git it
+# Roast my idea
 
-_no-bs github issue finder_
+_Discuss your ideas with the world and improvise it._
 
 ## Inspiration
 

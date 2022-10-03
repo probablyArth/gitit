@@ -1,4 +1,4 @@
-import { Title, Stack, Center, Text, Mark, Paper } from "@mantine/core";
+import { Title, Stack, Center, Text, Mark } from "@mantine/core";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -16,17 +16,12 @@ const Home: NextPage = () => {
           p={20}
           sx={() => ({ height: 300, width: "80%" })}
         >
-          <Title
-            className="glow"
-            color={"white"}
-            sx={() => ({ fontSize: 100 })}
-          >
-            Git it
+          <Title className="glow" color={"white"} sx={() => ({ fontSize: 76 })}>
+            roast my idea
           </Title>
           <Text italic>
-            <Mark>no-bs</Mark> github issue finder
+            Discuss your ideas with the world and improvise it.
           </Text>
-          <Paper>{/* <Filters /> */}</Paper>
         </Stack>
       </Center>
     </div>

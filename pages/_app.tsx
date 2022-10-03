@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           },
           ".glow": {
             textShadow:
-              "0 0 0 #fff,0 0 2px #fff,0 0 2px #fff,0 0 2px #fff,0 0 2px #fff,0 0 2px #fff,0 2px 4px #fff,0 2px 20px #fff",
+              "0 0 0 #ff1,0 0 2px #ff1,0 0 2px #ff1,0 0 2px #fff,0 0 2px #fff,0 0 2px #ff1,0 2px 4px #ff9990,0 2px 20px #fff",
           },
         }),
         colorScheme: "dark",
