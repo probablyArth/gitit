@@ -44,6 +44,7 @@ const Filters = () => {
           {labelsFile.map((labelFromJson, idx) => {
             return (
               <Button
+                key={idx}
                 variant={label === labelFromJson ? "light" : "default"}
                 onClick={() => {
                   setLabel(labelFromJson);
