@@ -1,12 +1,13 @@
 import { Title, Stack, Center, Text, Mark } from "@mantine/core";
 import type { NextPage } from "next";
 import Head from "next/head";
+import Dashboard from "../components/Dashboard";
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>git it</title>
+        <title>Git it</title>
         <meta name="description" content="No bs github issue finder." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -14,14 +15,15 @@ const Home: NextPage = () => {
         <Stack
           align={"center"}
           p={20}
-          sx={() => ({ height: 300, width: "80%" })}
+          sx={() => ({ height: 300, width: "100%" })}
         >
           <Title className="glow" color={"white"} sx={() => ({ fontSize: 76 })}>
-            roast my idea
+            git it
           </Title>
           <Text italic>
-            Discuss your ideas with the world and improvise it.
+            <Mark>no-bs</Mark> github issue finder
           </Text>
+          <Dashboard />
         </Stack>
       </Center>
     </div>

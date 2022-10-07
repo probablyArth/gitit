@@ -1,6 +1,10 @@
 import { MantineProvider } from "@mantine/core";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import type { AppProps } from "next/app";
 import "../styles/global.css";
+import FiltersContextProvider from "../contexts/filtersContextProvider";
+const queryClient = new QueryClient();
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <MantineProvider
@@ -38,7 +42,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         },
       }}
     >
-      <Component {...pageProps} />
+      <QueryClientProvider client={queryClient}>
+        <FiltersContextProvider>
+          <Component {...pageProps} />
+        </FiltersContextProvider>
+      </QueryClientProvider>
     </MantineProvider>
   );
 }
