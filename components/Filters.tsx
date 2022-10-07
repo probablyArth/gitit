@@ -7,7 +7,7 @@ import {
   Stack,
   Title,
 } from "@mantine/core";
-import { useContext } from "react";
+import { useContext, ChangeEvent } from "react";
 import languagesFile from "../assets/languages.json";
 import labelsFile from "../assets/labels.json";
 import { FiltersContext } from "../contexts/filtersContextProvider";
@@ -36,7 +36,7 @@ const Filters = () => {
             <Input
               value={label}
               id="labelInput"
-              onChange={(e) => {
+              onChange={(e: ChangeEvent<HTMLInputElement>) => {
                 setLabel(e.target.value);
               }}
             />
